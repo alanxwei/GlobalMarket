@@ -1,0 +1,2 @@
+G:\VS_Projects_Repos\GlobalMaket\GlobalMarket\obj\Debug\GlobalMarket.esproj.SuggestedBindingRedirects.cache
+G:\VS_Projects_Repos\GlobalMaket\GlobalMarket\obj\Debug\GlobalMarket.esproj.CoreCompileInputs.cache

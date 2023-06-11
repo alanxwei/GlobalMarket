@@ -3,29 +3,124 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularapp": {
+    //"GlobalMarket": {
+    //  "projectType": "application",
+    //  "schematics": {},
+    //  "root": "",
+    //  "sourceRoot": "src",
+    //  "prefix": "app",
+    //  "architect": {
+    //    "build": {
+    //      "builder": "@angular-devkit/build-angular:browser",
+    //      "options": {
+    //        "outputPath": "dist/GlobalMarket",
+    //        "index": "src/index.html",
+    //        "main": "src/main.ts",
+    //        "polyfills": [
+    //          "zone.js"
+    //        ],
+    //        "tsConfig": "tsconfig.app.json",
+    //        "assets": [
+    //          "src/favicon.ico",
+    //          "src/assets"
+    //        ],
+    //        "styles": [
+    //          "src/styles.css"
+    //        ],
+    //        "scripts": []
+    //      },
+    //      "configurations": {
+    //        "production": {
+    //          "budgets": [
+    //            {
+    //              "type": "initial",
+    //              "maximumWarning": "500kb",
+    //              "maximumError": "1mb"
+    //            },
+    //            {
+    //              "type": "anyComponentStyle",
+    //              "maximumWarning": "2kb",
+    //              "maximumError": "4kb"
+    //            }
+    //          ],
+    //          "outputHashing": "all"
+    //        },
+    //        "development": {
+    //          "buildOptimizer": false,
+    //          "optimization": false,
+    //          "vendorChunk": true,
+    //          "extractLicenses": false,
+    //          "sourceMap": true,
+    //          "namedChunks": true
+    //        }
+    //      },
+    //      "defaultConfiguration": "production"
+    //    },
+    //    "serve": {
+    //      "builder": "@angular-devkit/build-angular:dev-server",
+    //      "configurations": {
+    //        "production": {
+    //          "browserTarget": "GlobalMarket:build:production"
+    //        },
+    //        "development": {
+    //          "browserTarget": "GlobalMarket:build:development"
+    //        }
+    //      },
+          //"defaultConfiguration": "development",
+          //"options": {
+          //  "proxyConfig": "src/proxy.conf.js"
+          //}
+    //    },
+    //    "extract-i18n": {
+    //      "builder": "@angular-devkit/build-angular:extract-i18n",
+    //      "options": {
+    //        "browserTarget": "GlobalMarket:build"
+    //      }
+    //    },
+    //    "test": {
+    //      "builder": "@angular-devkit/build-angular:karma",
+    //      "options": {
+    //        "polyfills": [
+    //          "zone.js",
+    //          "zone.js/testing"
+    //        ],
+    //        "tsConfig": "tsconfig.spec.json",
+    //        "assets": [
+    //          "src/favicon.ico",
+    //          "src/assets"
+    //        ],
+    //        "styles": [
+    //          "src/styles.css"
+    //        ],
+    //        "scripts": [],
+    //        "karmaConfig": "karma.conf.js"
+    //      }
+    //    }
+    //  }
+    //},
+    "trading": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
+      "root": "projects/trading",
+      "sourceRoot": "projects/trading/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularapp",
-            "index": "src/index.html",
-            "main": "src/main.ts",
+            "outputPath": "dist/trading",
+            "index": "projects/trading/src/index.html",
+            "main": "projects/trading/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "projects/trading/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "projects/trading/src/favicon.ico",
+              "projects/trading/src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "projects/trading/src/styles.css"
             ],
             "scripts": []
           },
@@ -60,18 +155,21 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angularapp:build:production"
+              "browserTarget": "trading:build:production"
             },
             "development": {
-              "browserTarget": "angularapp:build:development"
+              "browserTarget": "trading:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "proxyConfig": "projects/trading/src/proxy.conf.js"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angularapp:build"
+            "browserTarget": "trading:build"
           }
         },
         "test": {
@@ -81,13 +179,13 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "tsconfig.spec.json",
+            "tsConfig": "projects/trading/tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "projects/trading/src/favicon.ico",
+              "projects/trading/src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "projects/trading/src/styles.css"
             ],
             "scripts": []
           }
